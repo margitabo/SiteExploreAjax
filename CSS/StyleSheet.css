@@ -1,0 +1,51 @@
+﻿.title_book
+{
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #729e00;
+}
+
+.bookImage
+{
+    clear: left;
+    width: 150px;
+	box-shadow: 0.3em 0.3em 0.3em #888;
+}
+
+dl, dd, dt, img, p
+{
+    margin: 0;
+    padding: 0;
+}
+
+dt
+{
+    clear: left;
+    width: 150px;
+    float: left;
+    height: 1%;
+    margin-bottom: 20px;
+}
+
+
+dd
+{
+    margin-left: 170px;
+    margin-bottom: 20px;
+    height: 1%;
+}
+
+dd:after
+{
+    content: ".";
+    visibility: hidden;
+    clear: both;
+    display: block;
+    height: 0;
+}
+.loadingPic
+{
+    margin: auto;
+    background: url(loadingIcon.gif) no-repeat 0 0;
+    padding-left: 25px;
+}

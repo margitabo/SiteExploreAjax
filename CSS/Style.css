@@ -1,0 +1,203 @@
+/* CSS Document */
+@CHARSET "UTF-8";
+
+body {
+	 margin: 0;
+     padding-top: 0;
+	 width:100%;
+	 height:100%;
+     background-color: #a6cc62;
+     color: #333;
+     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     font: 0.8em Verdana; 
+	 line-height:150%;
+	 min-width: 1400px
+}
+
+#pageContent{
+	margin: 0 auto;
+    text-align: left;
+    width: 100%;
+    height:100%;
+    display: block;
+	}
+	
+#site-header{
+    background-color: #FFFFFF;
+	height: 130px;
+    margin: 0 auto;
+	}
+.wrap {
+    margin: auto;
+	min-height: 250px;
+    width: 60%;
+	padding: 20px 20px 20px 20px;
+}
+#contentLeft{
+	float: left;
+	width: 18%;
+	padding: 1em 2em;
+	padding-right:2em;
+	padding-top: 0;
+	color: #333333;	
+	overflow: auto;
+}
+
+#contentCenter{
+	float: center;
+	width: 55%;
+	min-height: 660px;
+	padding: 1em 0.5em;
+	background-color: #F0F0F0;
+	margin:0 auto;
+	
+	border: 0.15em solid #B4B4B4;
+	border-radius: 0.5em;
+	box-shadow: 0 0 0.1em #888;
+	
+	vertical-align: top;
+    display: inline-block;
+    overflow: auto;
+}
+#contentRight{
+	float: right;
+	width: 15%;
+	/*max-width:240px;*/
+	padding-top: 0;
+	padding-right:4em;
+
+	color: #333333;
+	vertical-align: top;
+	display: inline-block;
+	overflow: auto;
+}
+#contentCenter a {
+	text-decoration: none;
+	
+}
+a, h2{
+	color: #729e00;
+	text-decoration: none;
+	font-weight: bold;
+}
+	
+#navi-top{
+	background-color: #333333;
+    height: 70px;
+    margin: auto;
+}
+#navi-bottom{
+	background-color: #333;
+    height: 50px;
+    clear: both;
+    padding: 40px 0 16px;
+    padding: 4rem 0 1.6rem;
+    
+    overflow: auto;
+	}
+	
+.siteNavigation {
+	display: inline-block;
+	margin:0;
+	padding:0;
+}
+
+.siteNavigation li 
+{
+	float: left;
+    font-size: 20px;
+    list-style-type: none;
+	line-height:30px;
+}
+
+.siteNavigation a:active {
+	background-color: #333300;
+}
+
+.navigationLink {
+	padding-left:20px;
+	padding-right:40px;
+	text-decoration: none;
+
+}
+a.navigationLink {
+	color:#FFFFFF;
+	font-family: Lato, sans-serif;
+}
+ a.navigationLink:hover{
+	color:#A5A5A5;
+}
+button {
+	clear: both;
+    float: right; 
+    margin-right: 300px;
+}
+
+h1.sansserif {
+	font-family:Arial,Helvetica,sans-serif;
+	text-align:left;
+	position:absolute;
+    margin-top: 20px;
+    padding-left:20px;
+    font-size:20px;
+}
+h3.tagline{
+	font-family:Helvetica,sans-serif;
+	text-align:left;
+	position:absolute;
+    margin-top: 50px;
+    padding-left:20px;
+    font-size:20px;
+    color:#A5A5A5;
+	}
+	
+.about_us{
+	font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 0 2.4rem;
+    padding-left:20px;
+    display: block;
+	}
+	
+input, textarea{
+     display: inline-block;
+     float: center;
+     border:1px solid #333;
+     border-radius:4px;
+     box-shadow:0 0 4px #333;
+}
+fieldset{
+     float: center;
+     border-radius:4px;
+}
+#contentLeft h2, #contentRight h2{
+	font: 0.75em Verdana;
+	text-transform: uppercase;
+	 margin-left: 56px;
+}
+#contentLeft p, #contentRight p{
+    width: 70%;
+	margin:auto;
+}
+.mataData{
+	color: #808080;
+	clear: both;
+}
+.article{
+	border: 0.15em solid #B4B4B4;
+	border-radius: 0.5em;
+	box-shadow: 0 0 0.1em #888;
+	background-color: #FFFFFF;
+	}
+
+.articleImage{
+	float: left;
+	box-shadow: 0.3em 0.3em 0.3em #888;
+	margin: 0 1em 1em 0;
+}
+
+#searchID {
+	background-image: url("inputbackgr.gif");
+	background-position: 100% 100%;
+	width: 60%;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#expanderHead").click(function(){
+		$("#expanderContent").slideToggle();
+		if ($("#expanderSign").text() == ">>>"){
+			$("#expanderSign").html("<<<")
+		}
+		else {
+			$("#expanderSign").text(">>>")
+		}
+	});
+	$("#expanderHead2").click(function(){
+		$("#expanderContent2").slideToggle();
+		if ($("#expanderSign2").text() == ">>>"){
+			$("#expanderSign2").html("<<<")
+		}
+		else {
+			$("#expanderSign2").text(">>>")
+		}
+	});
+	$("#expanderHead3").click(function(){
+		$("#expanderContent3").slideToggle();
+		if ($("#expanderSign3").text() == ">>>"){
+			$("#expanderSign3").html("<<<")
+		}
+		else {
+			$("#expanderSign3").text(">>>")
+		}
+	});
+});
+</script>
+
+</head>
+
+<body>
+<div id="pageContent">
+
+	<div id="contentLeft">
+	<div class="article">
+		<h2>Lorem ipsum</h2>
+		<hr />
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est nec ipsum iaculis aliquam. 
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. 
+		Donec odio ligula, porta a bibendum quis, dapibus quis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		Ut mattis diam ultricies est rhoncus sed gravida justo convallis. Cras imperdiet, lorem eu commodo ultricies, 
+		odio elit commodo arcu, vel cursus lorem risus nec dui. Donec vel nibh ac massa ullamcorper accumsan sed eget diam.
+		Sed tempor vestibulum metus ut cursus. Donec non tortor risus.</p>
+	</div>
+	</div>
+	
+	<div id="contentCenter">
+			<h2>Share your knowledge</h2>
+			<p class="mataData">By admin, on май 28th, 2014</p>
+			<p><img class="articleImage" src="clock.jpg" alt="clock" />Cras at quam tellus, non consectetur nulla. Etiam tempus nisl eget libero lobortis ornare. Proin id sapien eget
+			massa viverra varius sit amet in orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+			Sed sit amet eros sit amet felis porttitor tempor...<a id = "expanderHead" href="#">Click here to read more <span id="expanderSign">>>></span></a></p>
+			<div id="expanderContent" style="display:none">
+			Lorenter code hereem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+			 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+			 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorenter code hereem ipsum dolor sit amet,
+	 		 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+			</div>	
+			<p class="mataData">Публикувано в: Без категория</p>
+		    <hr />
+		
+			<h2>Create courses</h2>
+			<p class="mataData">By admin, on юни 1st, 2014</p>
+			<p><img class="articleImage" src="lorem.jpg" alt="lorem" />Phasellus vitae nunc elit, pellentesque tristique erat. Mauris quis
+			nibh vestibulum velit viverra aliquet non in lorem. Aliquam erat volutpat. Praesent faucibus erat sed ligula lacinia luctus. 
+			Vivamus molestie, massa non auctor consectetur, odio lacus cursus mi, id gravida justo urna id ipsum. Sed luctus dictum erat,
+			non mollis felis facilisis ut. Nullam auctor condimentum arcu, ut posuere lacus fringilla a...
+			<a id = "expanderHead2" href="#">Click here to read more <span id="expanderSign2">>>></span></a></p>
+				<div id="expanderContent2" style="display:none">
+			Lorenter code hereem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+			 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+			 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorenter code hereem ipsum dolor sit amet,
+	 		 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+			</div>	
+			<p class="mataData">Публикувано в: Без категория</p>
+		    <hr />
+		
+			<h2>Build your reputation</h2>
+			<p class="mataData">By admin, on юни 10th, 2014</p>
+			<p><img class="articleImage" src="mug.jpg" alt="mugImg" />Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Sed fringilla lacus ut nisi rutrum fermentum. Vestibulum quis libero tellus, et laoreet lorem. Pellentesque ante dui,
+			feugiat nec sollicitudin sed, aliquam ac risus. Nam fringilla erat nec orci sagittis quis accumsan nibh pretium. 
+			Suspendisse a dolor tellus...<a id = "expanderHead3" href="#">Click here to read more <span id="expanderSign3">>>></span></a></p>
+			<div id="expanderContent3" style="display:none">
+			Lorenter code hereem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+			 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+			 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorenter code hereem ipsum dolor sit amet,
+	 		 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+			</div>	
+			<p class="mataData">Публикувано в: Без категория</p>
+		
+	</div>
+	
+	<div id="contentRight">
+	<div class= "article">
+		<h2>WELCOME!</h2>
+		<hr />
+		<p><b>Explore Your Knowledge. <br> Life. Joy. Simple. </b><br>To explore the site, choose from the links below.</p>
+	</div>
+	<br><br>
+	
+	<div class= "article">
+		<h2>Fuscle mollis</h2>
+		<hr />
+		<p>Duis neque neque, euismod a iaculis et, bibendum nec turpis. Quisque magna magna, egestas sit amet cursus a,
+		egestas vel erat. Nam sed elementum dui. Etiam at magna sit amet mi varius ullamcorper id at magna. Curabitur aliquam vulputate
+		dignissim. Sed suscipit lacus id libero gravida blandit. Praesent lectus nulla, condimentum eu fringilla tincidunt, 
+		ullamcorper malesuada lectus. Curabitur ac neque mauris. Nullam ultrices iaculis orci nec accumsan.</p>
+		
+	</div>
+	</div>
+	</div>
+	</body>
+	</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <link type="text/css" rel="stylesheet" href="CSS/StyleSheet.css" />
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+ 
+  <script type="text/javascript">
+    
+    $(document).ready(function()
+    	      {
+    	        $.get('myData.xml', function(d){
+    	        $('#f').append('<h2> Recommended Web Development Books </h2></br>');
+    	        $('#f').append('<dl />');
+
+    	        $(d).find('book').each(function(){
+
+    	            var $book = $(this); 
+    	            var title = $book.attr("title");
+    	            var description = $book.find('description').text();
+    	            var imageurl = $book.attr('imageurl');
+    	            
+    	            var html = '<dt> <img class="bookImage" alt="" src="' + imageurl + '" /> </dt>';
+    	            html += '<dd> <span class="loadingPic" alt="Loading" />';
+    	            html += '<p class="title_book">' + title + '</p>';
+    	            html += '<p> ' + description + '</p>' ;
+    	            html += '</dd>';
+
+    	            $('dl').append($(html));
+    	            
+    	            $('.loadingPic').fadeOut(1400);
+    	        });
+    	    });
+    	});
+    </script>
+
+<body>
+<div id="pageContent">
+
+	<div id="contentLeft">
+	</div>
+	
+	<div id="contentCenter">
+	       <fieldset> 
+	       <legend> <h2>Free Code Tutorials </h2></legend>
+	       <br>
+			<p>Now it’s time to learn some actual code! In these free code tutorials, you’ll be introduced to binary code and four widely used website languages – HTML, CSS, JavaScript and PHP.</p><br>
+            <p>The purpose is not to train you fully, but just to give you a taste.</p><br>
+           
+            </fieldset><br><br>
+		
+		 <fieldset id="f"> 
+	       <legend> <h2>All Code Tutorials </h2></legend>
+	       <br>
+			<p>Here you can find all of Code Conquest’s code tutorials. All are free, bite-sized and beginner-friendly!</p><br>
+			<p>After reading them, you should have just enough knowledge to make a confident decision as to whether you would like to seriously learn them. And if you do want to take any of these languages further, each code tutorial finishes up with details on how to learn more.</p>
+			
+            </fieldset><br>
+			
+	</div>
+	
+	<div id="contentRight"></div>
+	</div>
+	</body>
+	</html>
